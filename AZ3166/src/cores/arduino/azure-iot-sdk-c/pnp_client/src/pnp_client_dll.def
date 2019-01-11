@@ -1,0 +1,22 @@
+LIBRARY pnp_client_dll
+EXPORTS
+    PnP_DeviceClient_CreateFromDeviceHandle
+    PnP_DeviceClient_RegisterInterfacesAsync
+	PnP_DeviceClient_Destroy
+	
+	PnP_DeviceClient_LL_CreateFromDeviceHandle
+	PnP_DeviceClient_LL_RegisterInterfacesAsync
+	PnP_DeviceClient_LL_DoWork
+	PnP_DeviceClient_LL_Destroy
+	
+	PnP_InterfaceClient_Create
+	PnP_InterfaceClient_SendTelemetryAsync
+	PnP_InterfaceClient_ReportReadOnlyPropertyStatusAsync
+	PnP_InterfaceClient_ReportReadWritePropertyStatusAsync
+	PnP_InterfaceClient_Destroy
+
+	PnP_InterfaceClient_LL_Create
+	PnP_InterfaceClient_LL_SendTelemetryAsync
+	PnP_InterfaceClient_LL_ReportReadOnlyPropertyStatusAsync
+	PnP_InterfaceClient_LL_ReportReadWritePropertyStatusAsync
+	PnP_InterfaceClient_LL_Destroy
