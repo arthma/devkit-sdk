@@ -7,7 +7,7 @@
 
 #define DEVKIT_MAJOR_VERSION 1
 #define DEVKIT_MINOR_VERSION 7
-#define DEVKIT_PATCH_VERSION 1
+#define DEVKIT_PATCH_VERSION 3
 
 
 #ifdef __cplusplus

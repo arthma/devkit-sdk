@@ -221,7 +221,7 @@ bool EEPROMInterface::PCROPCheck(int sector)
     PCROPStatus = pAdvOBInit.Sectors & PCROP_ENABLED_VALUE;
 
     /* Check if sector 2 has been already PCROP-ed */
-    if ((PCROPStatus == PCROP_ENABLED_VALUE) && (SectorsPCROPStatus == sector))
+    if ((PCROPStatus == PCROP_ENABLED_VALUE) && (SectorsPCROPStatus == (uint32_t)sector))
         return true;
     else
         return false;
