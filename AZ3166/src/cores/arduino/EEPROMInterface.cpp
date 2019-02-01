@@ -12,8 +12,20 @@
 #define MAX_BUFFER_SIZE 1000
 #define MAX_ENCRYPT_DATA_SIZE 480
 #define MAX_ENVELOPE_SIZE 488
+
 // The segment length of each data partition
-const static int DATA_SEGMENT_LENGTH[11] = {976, 0, 192, 120, 0, 584, 680, 784, 880, 0, 88};
+const static int DATA_SEGMENT_LENGTH[11] = {
+    STSAFE_ZONE_0_SIZE, 
+    STSAFE_ZONE_1_SIZE, 
+    STSAFE_ZONE_2_SIZE,
+    STSAFE_ZONE_3_SIZE,
+    STSAFE_ZONE_4_SIZE,
+    STSAFE_ZONE_5_SIZE,
+    STSAFE_ZONE_6_SIZE,
+    STSAFE_ZONE_7_SIZE,
+    STSAFE_ZONE_8_SIZE,
+    STSAFE_ZONE_9_SIZE,
+    STSAFE_ZONE_10_SIZE};
 
 EEPROMInterface::EEPROMInterface()
 {
